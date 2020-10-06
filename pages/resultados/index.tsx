@@ -12,6 +12,8 @@ export default function Resultados() {
 
 			<h3>Ainda não implementada</h3>
 
+			<h5>mas se estivesse, só daria Grêmio...</h5>
+
 			<div className={styles.buttons}>
 				<Link href="/select-regioes">
 					<button type="button" className={styles.cancel}>
