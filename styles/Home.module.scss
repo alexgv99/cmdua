@@ -1,0 +1,56 @@
+$primary-color: rgb(18, 0, 179);
+$secondary-color: rgb(211, 223, 236);
+
+.container {
+	min-height: 100vh;
+	padding: 0 0.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.form {
+	display: grid;
+	background-color: lighten(lightgrey, 10%);
+	padding: 50px;
+
+	input {
+		padding: 10px;
+		width: 25wh;
+	}
+
+	label {
+		display: grid;
+		margin-bottom: 30px;
+	}
+}
+
+.buttons {
+	display: flex;
+	justify-content: flex-end;
+
+	.primary {
+		background-color: $primary-color;
+		color: white;
+	}
+
+	.secondary {
+		background-color: $secondary-color;
+		color: black;
+	}
+
+	button {
+		padding: 10px 30px;
+	}
+}
+
+.regiao {
+	width: 200px;
+	background-color: grey;
+	padding: 20px;
+	margin-bottom: 5px;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
