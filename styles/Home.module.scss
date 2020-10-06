@@ -1,5 +1,6 @@
-$primary-color: rgb(18, 0, 179);
-$secondary-color: rgb(211, 223, 236);
+$primary-color: rgba(37, 110, 19, 0.699);
+$secondary-color: rgb(77, 10, 5);
+$cancel-color: rgb(211, 223, 236);
 
 .container {
 	min-height: 100vh;
@@ -28,7 +29,15 @@ $secondary-color: rgb(211, 223, 236);
 
 .buttons {
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-between;
+
+	.principal {
+		background-color: $primary-color;
+		color: white;
+		padding: 50px;
+		margin: 50px;
+		font-size: 16pt;
+	}
 
 	.primary {
 		background-color: $primary-color;
@@ -37,11 +46,17 @@ $secondary-color: rgb(211, 223, 236);
 
 	.secondary {
 		background-color: $secondary-color;
+		color: white;
+	}
+
+	.cancel {
+		background-color: $cancel-color;
 		color: black;
 	}
 
 	button {
 		padding: 10px 30px;
+		margin-left: 10px;
 	}
 }
 
@@ -53,4 +68,24 @@ $secondary-color: rgb(211, 223, 236);
 	color: white;
 	font-weight: bold;
 	text-align: center;
+}
+
+.colorados {
+	width: 200px;
+	padding: 20px;
+	margin-bottom: 5px;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	background-image: linear-gradient(to right, red, white);
+}
+
+.gremistas {
+	width: 200px;
+	padding: 20px;
+	margin-bottom: 5px;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	background-image: linear-gradient(to right, black, blue, white);
 }

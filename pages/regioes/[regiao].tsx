@@ -34,14 +34,30 @@ const SelectRegioes = (props) => {
 					<h4>Data de votação: {regiao.dataVotacao}</h4>
 					<div className={styles.buttons}>
 						<Link href="/select-regioes">
-							<button type="button" className={styles.secondary}>
+							<button type="button" className={styles.cancel}>
 								Voltar
 							</button>
 						</Link>
+						<Link href="/resultados">
+							<button type="button" className={styles.secondary}>
+								Resultados
+							</button>
+						</Link>
 					</div>
+					{query.regiao === 's' ? (
+						<div className={styles.buttons}>
+							<Link href="/chapas/s">
+								<button type="button" className={styles.principal}>
+									Quero votar nesta região
+								</button>
+							</Link>
+						</div>
+					) : (
+						<h3>Só há chapas na Região Sul</h3>
+					)}
 				</>
 			) : (
-				<h1>Carregando região selecionada</h1>
+				<h4>Carregando região selecionada</h4>
 			)}{' '}
 		</div>
 	);
